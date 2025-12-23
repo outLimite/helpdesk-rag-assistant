@@ -97,8 +97,6 @@ LANGCHAIN_API_KEY=your_key
 GROQ_API_KEY=your_key
 ```
 
-> ⚠️ `.env` не должен коммититься в репозиторий.
-
 ---
 
 ### 4. Загрузка и подготовка данных
@@ -130,34 +128,6 @@ http://localhost:8000/docs
 
 ---
 
-## 🔌 API
-
-### POST `/ask`
-
-Пример запроса:
-
-```json
-{
-  "question": "How can I reset my password?"
-}
-```
-
-Пример ответа:
-
-```json
-{
-  "answer": "...",
-  "sources": [
-    {
-      "text": "...",
-      "score": 0.83
-    }
-  ]
-}
-```
-
----
-
 ## 📊 Оценка качества
 
 - **Uniformity** — равномерность embedding-пространства
@@ -167,14 +137,6 @@ http://localhost:8000/docs
 
 ```bash
 python scripts/evaluate.py
-```
-
----
-
-## 🧪 Тесты
-
-```bash
-pytest
 ```
 
 ---
