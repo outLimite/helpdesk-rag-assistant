@@ -7,7 +7,7 @@ from embeddings.model import load_embedding_model
 class TextEmbedder:
     def __init__(
         self,
-        model_name: str = None,
+        model_name: str =  "deepvk/USER-bge-m3",
         normalize: bool = True,
         device: str = None,
     ):
